@@ -63,7 +63,7 @@ $git add -p // for the code commit
 $git commit -v
 ```
 
-# CLEAN YOUR COMMIT?
+# Clean Your Commit?
 ``` cmd
 $echo "puts "Hello world!" >> main.rb
 $git add .
