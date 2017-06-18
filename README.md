@@ -70,16 +70,3 @@ $git add .
 $git commit -m "Add message to software"
 git rebase -i HEAD~3 // Here we can refactor our commit
 ```
-N is the number of previous commit you want to work with
-Not that you should rebase anything that you pushed, you will create a big mess
-
-# BRANCH
-git checkout -b name_branch
-git branch
-
-# REMOTE
-git branch -a
-git push origin master
-git push oirigin master:new_feature
-
-git push dev master // origin is just a convention
