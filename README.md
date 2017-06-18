@@ -11,6 +11,13 @@ git reset HEAD~ // remove last commit
 git reset // unstage files
 ```
 
+## Commit guideline
+1. Commit is composed of a subject and body separated by a blank line
+2. Short subject (under 50 characters)
+3. Capitalise subject dn not full stop
+4. Subject answer "what"
+5. Body answer what/whym not how, the code does
+
 ## Initialisation
 Every git sotry start with `git init`
 
