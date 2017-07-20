@@ -1,6 +1,6 @@
 # Git Story
 List of the command covered
-``` cmd
+``` bash
 git add . // will staged all the files
 git add -e // will staged all previously staged files
 git add -p // will let you select what you want to stage
@@ -23,21 +23,21 @@ Every git sotry start with `git init`
 
 The current repository is empty, let's create a new file:
 
-``` cmd
+``` bash
 $touch README.md
 ```
 
 ## Basic add & Commit
 Let's start with a pretty simple command that you must already use.
 
-``` cmd
+``` bash
 $git add .
 $git commit -m "Initialisation of the project"
 ```
 
 Well, we commit an empty file it's not really useful right? Let's fix that.
 
-``` cmd
+``` bash
 $echo "#I'm Learning Git!" > README.md
 $git status
 $git add .
@@ -48,8 +48,8 @@ $git commit --amend
 ## Add & Commit Granularity
 Let's add more information.
 
-``` cmd
 $echo "I'm learning git and it's really great" << README.md // here we add a new line
+``` bash
 $touch main.rb
 $echo "You can run the program with Ruby with `ruby main.rb`" // here we add a new line
 $git add -e // Here we add only staged file
@@ -64,7 +64,7 @@ $git commit -v
 ```
 
 # Clean Your Commit?
-``` cmd
+``` bash
 $echo "puts "Hello world!" >> main.rb
 $git add .
 $git commit -m "Add message to software"
