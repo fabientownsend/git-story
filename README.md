@@ -49,8 +49,8 @@ $git commit --amend
 ## Add & Commit Granularity
 Let's add more information.
 
-$echo "I'm learning git and it's really great" << README.md // here we add a new line
 ``` bash
+$echo "I'm learning git and it's really great" >> README.md // here we add a new line
 $touch main.rb
 $echo "You can run the program with Ruby with `ruby main.rb`" // here we add a new line
 $git add -e // Here we add only staged file
