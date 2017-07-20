@@ -9,6 +9,7 @@ git commit -v // let you the diff and write your commit
 git commit --amend // merge the last add to previous commit
 git reset HEAD~ // remove last commit
 git reset // unstage files
+git rebase -i HEAD~N // Here we can refactor our commit, N is the number of commit backward
 ```
 
 ## Commit guideline
