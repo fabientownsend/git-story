@@ -60,3 +60,25 @@ $git checkout master
 $git branch -d name_of_branch
 $git branch -D second_branch // force the delete
 ```
+
+How do we merge our new feature to or master branch?
+``` bash
+$git checkout -b new_feature
+$touch feature.rb
+$git add .
+$git commit -m "New feature"
+$git checkout master
+$git merge new_feature
+```
+
+As the master can be update when you work on a branch, you may need to update
+your branch
+
+``` bash
+$git branch second_feature
+$echo "print "hello world" > feature.rb
+$git add .
+$git commit -m "Update feature"
+$git checkout second_feature
+$git rebase master
+```
