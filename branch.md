@@ -5,6 +5,7 @@ Lis of the commands covered
 ``` bash
 git branch
 git branch -a
+git branch name_of_branch
 git checkout -b name_of_branch
 git checkout name_of_branch
 git branch -d name_of_branch
@@ -27,4 +28,35 @@ git remote -v
 git push origin name_of_branch
 git push origin :name_of_branch
 git push remote new_branch:master
+```
+
+Let's check the current branch:
+``` bash
+$git branch
+$git branch -a
+```
+
+We can create a branch
+``` bash
+$git branch name_of_branch
+$git branch
+```
+
+As we can se we aren't in this new branch, we need to manually switch on it:
+``` bash
+$git checkout name_of_branch
+$git branch
+```
+
+Otherwise you can do
+``` bash
+$git checkout -b second_branch
+$git branch
+```
+
+Now you can to delete these branch
+``` bash
+$git checkout master
+$git branch -d name_of_branch
+$git branch -D second_branch // force the delete
 ```
